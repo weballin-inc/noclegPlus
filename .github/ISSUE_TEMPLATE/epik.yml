@@ -1,0 +1,23 @@
+name: Epik
+description: Główny obszar funkcjonalny, grupuje historyjki
+title: "[EPIK] "
+labels: ["epik"]
+body:
+  - type: textarea
+    id: zakres
+    attributes:
+      label: Zakres i cel epiku
+    validations:
+      required: true
+  - type: textarea
+    id: historyjki
+    attributes:
+      label: Historyjki należące do epiku
+      placeholder: "H-1, H-2, H-3"
+  - type: textarea
+    id: kryteria
+    attributes:
+      label: Kryteria zakończenia epiku
+      placeholder: "Epik jest zakończony, gdy wszystkie jego historyjki są w statusie Zakończone."
+    validations:
+      required: true
