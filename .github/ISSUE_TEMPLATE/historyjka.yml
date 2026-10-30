@@ -1,0 +1,59 @@
+name: Historyjka użytkownika
+description: Nowa funkcja w formie "Jako … chcę … aby …"
+title: "[HISTORYJKA] "
+labels: ["historyjka"]
+body:
+  - type: textarea
+    id: historyjka
+    attributes:
+      label: Historyjka
+      value: "Jako [rola] chcę [funkcja], aby [korzyść]."
+    validations:
+      required: true
+  - type: textarea
+    id: kryteria
+    attributes:
+      label: Kryteria akceptacji (minimum 3, każde sprawdzalne)
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: epik
+    attributes:
+      label: Epik
+      options:
+        - E1 Katalog i wyszukiwanie
+        - E2 Rezerwacja
+        - E3 Konta i administracja
+    validations:
+      required: true
+  - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - Wysoki
+        - Średni
+        - Niski
+    validations:
+      required: true
+  - type: dropdown
+    id: szacunek
+    attributes:
+      label: Szacunek (skala zespołu)
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "5"
+        - "8"
+    validations:
+      required: true
+  - type: textarea
+    id: zaleznosci
+    attributes:
+      label: Zależności i zadania techniczne
+      placeholder: "Np. wymaga H-6. Podzadania: model danych (osoba), endpoint (osoba)."

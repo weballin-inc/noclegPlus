@@ -1,0 +1,33 @@
+name: Zadanie techniczne
+description: Konkretna praca wynikająca z historyjki
+title: "[ZADANIE] "
+labels: ["zadanie"]
+body:
+  - type: input
+    id: historyjka
+    attributes:
+      label: Numer historyjki (np. H-3)
+    validations:
+      required: true
+  - type: textarea
+    id: opis
+    attributes:
+      label: Co trzeba zrobić
+    validations:
+      required: true
+  - type: input
+    id: osoba
+    attributes:
+      label: Osoba odpowiedzialna (@github)
+    validations:
+      required: true
+  - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - Wysoki
+        - Średni
+        - Niski
+    validations:
+      required: true

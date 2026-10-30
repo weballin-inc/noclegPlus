@@ -1,0 +1,37 @@
+name: Błąd
+description: Opis nieprawidłowego działania
+title: "[BŁĄD] "
+labels: ["błąd"]
+body:
+  - type: textarea
+    id: kroki
+    attributes:
+      label: Kroki do odtworzenia
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: oczekiwane
+    attributes:
+      label: Czego się spodziewano
+    validations:
+      required: true
+  - type: textarea
+    id: faktyczne
+    attributes:
+      label: Co się stało
+    validations:
+      required: true
+  - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - Wysoki
+        - Średni
+        - Niski
+    validations:
+      required: true
